@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Terminal</title>
+    <link>/tags/blog/</link>
+    <description>Recent content in Blog on Terminal</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 26 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bloggen für IT-Nerds</title>
+      <link>/posts/blog/how-to-blog/</link>
+      <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/blog/how-to-blog/</guid>
+      <description>&lt;p&gt;Ein Blog ist ein schönes Medium, um seine eigenen Gedanken und Ideen mit der Welt zu teilen. Außerdem ist es ein praktisches Journal, auf das man quasi von überall aus Zugriff hat.&lt;/p&gt;&#xA;&lt;p&gt;Natürlich könnte ich mir jetzt eine generische WordPress-Seite zusammenschustern&amp;hellip;aber das wäre ja langweilig. Um etwas Würze in das ganze zu bringen, wird dieser Blog technisch anspruchsvoll aufgesetzt.&lt;/p&gt;&#xA;&lt;p&gt;Dazu benötigen wir folgende Tools:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Obsidian&lt;/li&gt;&#xA;&lt;li&gt;Hugo&lt;/li&gt;&#xA;&lt;li&gt;GitHub&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Disclaimer! Ich arbeite auf einem Linux System. Daher richtet sich diese Anleitung eher an Linux User.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
