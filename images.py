@@ -3,9 +3,9 @@ import re
 import shutil
 
 # Paths
-posts_dir = "/home/min/Documents/armintei/content/posts/"
-attachments_dir = "/home/min/Obsidian Vault/Punk Records/ImageSource/"
-static_images_dir = "/home/min/Documents/armintei/static/images/"
+posts_dir = r"/home/min/Documents/armintei/content/posts/"
+attachments_dir = r"/home/min/Obsidian Vault/Punk Records/ImageSource/"
+static_images_dir = r"/home/min/Documents/armintei/static/images/"
 
 # Step 1: Process each markdown file in the posts directory
 for filename in os.listdir(posts_dir):
