@@ -110,9 +110,9 @@
   <header class="header">
   <div class="header__inner">
     <div class="header__logo">
-      <a href="/">
+      <a href="https://armintei.github.io/armintei-blog/">
   <div class="logo">
-    Terminal
+    armintei
   </div>
 </a>
 
@@ -124,7 +124,7 @@
     <ul class="menu__dropdown">
       
         
-          <li><a href="/armintei-blog/about">About</a></li>
+          <li><a href="https://armintei.github.io/armintei-blog/">About</a></li>
         
       
         
@@ -145,7 +145,7 @@
     
       
         
-          <li><a href="/armintei-blog/about" >About</a></li>
+          <li><a href="https://armintei.github.io/armintei-blog/" >About</a></li>
         
       
         
@@ -187,7 +187,7 @@
 
         <div class="post-content">
           
-            <p>Ein Blog ist ein super Medium, um seine eigenen Gedanken und Ideen mit der Welt zu teilen. Man könnte es auch als eine Art Notizbuch sehen, auf das man quasi von überall aus Zugriff hat.</p>
+            <p>Ein Blog ist ein geniales Medium um seine Ideen festzuhalten und mit anderen zu teilen. Daher habe ich beschlossen, einen eigenen Blog ins Leben zu rufen.</p>
 <p>Natürlich könnte ich mir jetzt eine generische WordPress-Seite basteln&hellip;aber das wäre langweilig. Um etwas Würze in das ganze zu bringen, wird dieser Blog technisch unnötig anspruchsvoll aufgebaut.</p>
 <p>Dazu benötigen wir folgende Tools:</p>
 <ul>
@@ -203,6 +203,43 @@
         
            <div>
             <a class="read-more button inline" href="/armintei-blog/posts/blog/how-to-blog/">[Read more]</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h2 class="post-title">
+          <a href="https://armintei.github.io/armintei-blog/posts/blog/sexy-terminal-mit-oh-my-posh/"></a>
+        </h2>
+        <div class="post-meta"></div>
+
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <h3 id="installation">Installation</h3>
+<pre tabindex="0"><code>curl -s https://ohmyposh.dev/install.sh | bash -s
+nano ~/.bashrc 
+</code></pre><p>An erster Stelle im Skript hinzufügen, um oh-my-posh beim starten des Terminals automatisch zu initialisieren:</p>
+<pre tabindex="0"><code># oh-my-posh
+export PATH=$PATH:/home/min/.local/bin
+</code></pre><p>Außerdem deklarieren wir eine Variable <code>POSH_THEME=&quot;theme.name&quot;</code></p>
+<p>Alle themes sind in master repository enthalten. Wir klonen es in einen neuen Ordner <code>posh-themes</code>.</p>
+<pre tabindex="0"><code>git clone https://github.com/JanDeDobbeleer/oh-my-posh.git posh-themes
+</code></pre><p>Um das festlegen des Themes etwas einfacher zu gestalten, fügen wir noch etwas in der Datei <code>.bashrc</code> hinzu.</p>
+<pre tabindex="0"><code>POSH_THEME=&#34;theme.name&#34;
+
+eval &#34;$(oh-my-posh init bash --config /home/min/posh-themes/themes/$POSH_THEME.omp.json)&#34;
+</code></pre><p>Wir deklarieren eine Variable <code>POSH_THEME=&quot;theme-name&quot;</code> und brauchen bloß den Namen des gewünschten Themes einfügen.</p>
+          
+        </div>
+
+        
+           <div>
+            <a class="read-more button inline" href="/armintei-blog/posts/blog/sexy-terminal-mit-oh-my-posh/">[Read more]</a>
           </div>
         
       </article>
