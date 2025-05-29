@@ -18,7 +18,7 @@ pagination.pagerSize = 5
   showMenuItems = 2
 
   # show selector to switch language
-  showLanguageSelector = false
+  showLanguageSelector = true
 
   # set theme to full screen width
   fullWidthTheme = false
@@ -92,14 +92,14 @@ pagination.pagerSize = 5
       words = "words"
 
       [languages.en.params.logo]
-        logoText = "Terminal"
-        logoHomeLink = "/"
+        logoText = "armintei"
+        logoHomeLink = "https://armintei.github.io/armintei-blog/"
 
       [languages.en.menu]
         [[languages.en.menu.main]]
           identifier = "about"
           name = "About"
-          url = "/about"
+          url = "https://armintei.github.io/armintei-blog/"
         [[languages.en.menu.main]]
           identifier = "showcase"
           name = "Showcase"
