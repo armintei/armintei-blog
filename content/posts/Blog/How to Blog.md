@@ -6,7 +6,7 @@ tags:
   - guide
 ---
 
-Ein Blog ist ein super Medium, um seine eigenen Gedanken und Ideen mit der Welt zu teilen. Man könnte es auch als eine Art Notizbuch sehen, auf das man quasi von überall aus Zugriff hat.
+Ein Blog ist ein geniales Medium um seine Ideen festzuhalten und mit anderen zu teilen. Daher habe ich beschlossen, einen eigenen Blog ins Leben zu rufen.
 
 Natürlich könnte ich mir jetzt eine generische WordPress-Seite basteln...aber das wäre langweilig. Um etwas Würze in das ganze zu bringen, wird dieser Blog technisch unnötig anspruchsvoll aufgebaut.
 
@@ -120,7 +120,7 @@ ssh -T git@github.com
  
 Ihr solltet eine Nachricht mit eurem Benutzernamen erhalten.
 
-git remote add origin git@github.com:armintei/armintei-blog
+git remote add origin git@github.com:USERNAME/REPONAME
 git add .
 git commit -m "Your message"
 git push -u origin master
