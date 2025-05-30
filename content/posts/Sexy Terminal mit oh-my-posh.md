@@ -1,3 +1,10 @@
+---
+title: Sexy Terminal mit oh-my-posh
+date: 2025-05-29
+tags:
+  - blog
+  - guide
+---
 
 ### Installation
 

@@ -1,11 +1,10 @@
 ---
-title: Bloggen als IT-Nerds
+title: Bloggen wie ein IT-Profi
 date: 2025-05-26
 tags:
   - blog
   - guide
 ---
-
 Ein Blog ist ein geniales Medium um seine Ideen festzuhalten und mit anderen zu teilen. Daher habe ich beschlossen, einen eigenen Blog ins Leben zu rufen.
 
 Natürlich könnte ich mir jetzt eine generische WordPress-Seite basteln...aber das wäre langweilig. Um etwas Würze in das ganze zu bringen, wird dieser Blog technisch unnötig anspruchsvoll aufgebaut.
@@ -52,7 +51,7 @@ hugo server -t terminal
 
 Filesync
 ```
-sudo rsync -av --delete "Obsidian Vault/Punk Records/Blog" "Documents/armintei/content/posts/"
+sudo rsync -av --delete "/home/user/Obsidian Vault/Punk Records/Blog/" "/home/user/Documents/armintei/content/posts/"
 ```
 
 Unser Blog ist jetzt mit Inhalt gefüllt allerdings gibt es noch ein Problem mit den Bildern. Diese werden nicht dargestellt weil unsere Seite die Quelle nicht kennt.
@@ -103,7 +102,7 @@ print("Markdown files processed and images copied successfully.")
 ### Upload to GitHub
 
 In GitHub ein neues Repository erstellen
-![[Pasted image 20250526180623.png]]
+![[How_to_Blog.png]]
 
 ```
 ## Generiert einen SSH Key (Mac/Linux/Windows)
@@ -124,6 +123,9 @@ git remote add origin git@github.com:USERNAME/REPONAME
 git add .
 git commit -m "Your message"
 git push -u origin master
+
+---
+
 
 
 

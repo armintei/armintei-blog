@@ -3,16 +3,16 @@ import re
 import shutil
 
 # Paths
-posts_dir = r"/home/min/Documents/armintei/content/posts/"
-attachments_dir = r"/home/min/Obsidian Vault/Punk Records/ImageSource/"
-static_images_dir = r"/home/min/Documents/armintei/static/images/"
+posts_dir = "/home/min/Documents/armintei/content/posts/"
+attachments_dir = "/home/min/Obsidian Vault/Punk Records/ImageSource/"
+static_images_dir = "/home/min/Documents/armintei/static/images/"
 
 # Step 1: Process each markdown file in the posts directory
 for filename in os.listdir(posts_dir):
     if filename.endswith(".md"):
         filepath = os.path.join(posts_dir, filename)
         
-        with open(filepath, "r") as file:
+        with open(filepath, "r", encoding="utf-8") as file:
             content = file.read()
         
         # Step 2: Find all image links in the format ![Image Description](/images/Pasted%20image%20...%20.png)
