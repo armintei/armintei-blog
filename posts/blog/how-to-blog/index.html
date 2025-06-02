@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Bloggen als IT-Nerds :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ein Blog ist ein geniales Medium um seine Ideen festzuhalten und mit anderen zu teilen. Daher habe ich beschlossen, einen eigenen Blog ins Leben zu rufen.
+Natürlich könnte ich mir jetzt eine generische WordPress-Seite basteln&hellip;aber das wäre langweilig. Um etwas Würze in das ganze zu bringen, wird dieser Blog technisch unnötig anspruchsvoll aufgebaut.
+Dazu benötigen wir folgende Tools:
+Obsidian Hugo GitHub Installation Disclaimer! Ich arbeite auf einem Linux System. Daher richtet sich diese Anleitung eher an Linux User. Ich werde die Schritte für Windows ergänzen.
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="https://armintei.github.io/armintei-blog/posts/blog/how-to-blog/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="https://armintei.github.io/armintei-blog/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="https://armintei.github.io/armintei-blog/css/code.min.d529ea4b2fb8d34328d7d31afc5466d5f7bc2f0bc9abdd98b69385335d7baee4.css">
+
+  
+  <link rel="stylesheet" href="https://armintei.github.io/armintei-blog/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="https://armintei.github.io/armintei-blog/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="https://armintei.github.io/armintei-blog/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="https://armintei.github.io/armintei-blog/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="https://armintei.github.io/armintei-blog/css/main.min.775ac2af004d44c22a6d000fbd1d9af529642f5cef27399d0280d180af2c2e9b.css">
+
+  
+  <link rel="stylesheet" href="https://armintei.github.io/armintei-blog/css/menu.min.310d32205bdedd6f43144e3c3273c9deecd238eba5f9108db5ea96ca0cfbe377.css">
+
+  
+  <link rel="stylesheet" href="https://armintei.github.io/armintei-blog/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="https://armintei.github.io/armintei-blog/css/post.min.ad50c7f4d00e7975918f37fc74c6029e1959a40d66fb5b2c6564a8715e985573.css">
+
+  
+  <link rel="stylesheet" href="https://armintei.github.io/armintei-blog/css/syntax.min.e9ab635cf918bc84b901eb65c0b2caa74c9544245e3647c1af5c129896ef276e.css">
+
+  
+  <link rel="stylesheet" href="https://armintei.github.io/armintei-blog/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="https://armintei.github.io/armintei-blog/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+<link rel="stylesheet" href="https://armintei.github.io/armintei-blog/terminal.css">
+
+
+
+
+<link rel="shortcut icon" href="https://armintei.github.io/armintei-blog/favicon.png">
+<link rel="apple-touch-icon" href="https://armintei.github.io/armintei-blog/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Bloggen als IT-Nerds">
+<meta property="og:description" content="Ein Blog ist ein geniales Medium um seine Ideen festzuhalten und mit anderen zu teilen. Daher habe ich beschlossen, einen eigenen Blog ins Leben zu rufen.
+Natürlich könnte ich mir jetzt eine generische WordPress-Seite basteln&hellip;aber das wäre langweilig. Um etwas Würze in das ganze zu bringen, wird dieser Blog technisch unnötig anspruchsvoll aufgebaut.
+Dazu benötigen wir folgende Tools:
+Obsidian Hugo GitHub Installation Disclaimer! Ich arbeite auf einem Linux System. Daher richtet sich diese Anleitung eher an Linux User. Ich werde die Schritte für Windows ergänzen.
+" />
+<meta property="og:url" content="https://armintei.github.io/armintei-blog/posts/blog/how-to-blog/" />
+<meta property="og:site_name" content="Terminal" />
+
+  <meta property="og:image" content="https://armintei.github.io/armintei-blog/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2025-05-26 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="https://armintei.github.io/armintei-blog/">
+  <div class="logo">
+    armintei
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="https://armintei.github.io/armintei-blog/">About</a></li>
+        
+      
+        
+          <li><a href="/armintei-blog/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="https://armintei.github.io/armintei-blog/" >About</a></li>
+        
+      
+        
+          <li><a href="/armintei-blog/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://armintei.github.io/armintei-blog/posts/blog/how-to-blog/">Bloggen als IT-Nerds</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-05-26</time></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="https://armintei.github.io/armintei-blog/tags/blog/">blog</a>&nbsp;
+      
+      #<a href="https://armintei.github.io/armintei-blog/tags/guide/">guide</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <p>Ein Blog ist ein geniales Medium um seine Ideen festzuhalten und mit anderen zu teilen. Daher habe ich beschlossen, einen eigenen Blog ins Leben zu rufen.</p>
+<p>Natürlich könnte ich mir jetzt eine generische WordPress-Seite basteln&hellip;aber das wäre langweilig. Um etwas Würze in das ganze zu bringen, wird dieser Blog technisch unnötig anspruchsvoll aufgebaut.</p>
+<p>Dazu benötigen wir folgende Tools:</p>
+<ul>
+<li>Obsidian</li>
+<li>Hugo</li>
+<li>GitHub</li>
+</ul>
+<h3 id="installation">Installation<a href="#installation" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p><em>Disclaimer! Ich arbeite auf einem Linux System. Daher richtet sich diese Anleitung eher an Linux User. Ich werde die Schritte für Windows ergänzen.</em></p>
+<ol>
+<li>
+<p>Obsidian
+Installiere als erstes <a href="https://obsidian.md/download">Obsidian</a> falls du es noch nicht hast.
+Unter Linux solltest du es mit den gängigen Paketmanagern installieren können.
+In meinem Fall(Arch) sieht das wie folgt aus:
+<code>pacman -S obsidian</code></p>
+</li>
+<li>
+<p>Hugo
+Anschließend geht es weiter mit Hugo.
+Hierfür benötigen wir vorab noch <a href="https://git-scm.com/downloads">git</a> &amp; <a href="https://go.dev/">go</a>
+Beide sollten standardmäßig unter Linux installiert sein.
+So kannst man das überprüfen:
+<code>git version</code>
+<code>go version</code></p>
+</li>
+</ol>
+<p>Wenn Beides installiert ist, können wir nun Hugo installieren. Dazu gehen wir vor wie bei Obsidian.
+<code>pacman -S hugo</code></p>
+<h3 id="setup">Setup<a href="#setup" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Um eine Seite zu erstellen wechseln wir mit <code>cd</code> erstmal in ein Verzeichnis in unserem System in dem wir die Daten speichern wollen. Ich habe habe das ganze in <code>Documents</code>erstellt.
+<code>hugo new site $website-name</code></p>
+<p>Innerhalb von eurem Zielverzeichnis, wird ein neuer Ordner mit eurem Website Namen erstellt. Wir wechseln in diesen hinein und erstellen hier ein leeres git Repository.</p>
+<p>Führt diesen Code-Block aus, um git einzurichten, das Theme herunterzuladen und anschließend die hugo Website zu starten.</p>
+<pre tabindex="0"><code>git init
+git config --global user.name &#34;USERNAME&#34;
+git config --global user.email &#34;your@mail.com&#34;
+git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal
+hugo server -t terminal
+</code></pre><p>Filesync</p>
+<pre tabindex="0"><code>sudo rsync -av --delete &#34;Obsidian Vault/Punk Records/Blog&#34; &#34;Documents/armintei/content/posts/&#34;
+</code></pre><p>Unser Blog ist jetzt mit Inhalt gefüllt allerdings gibt es noch ein Problem mit den Bildern. Diese werden nicht dargestellt weil unsere Seite die Quelle nicht kennt.
+Das lösen wir mit einem Python Script.</p>
+<pre tabindex="0"><code># Linux 
+
+import os
+import re
+import shutil
+
+# Paths
+posts_dir = &#34;/home/min/Documents/armintei/content/posts/&#34;
+attachments_dir = &#34;/home/min/Obsidian Vault/Punk Records/ImageSource/&#34;
+static_images_dir = &#34;/home/min/Documents/armintei/static/images/&#34;
+
+# Step 1: Process each markdown file in the posts directory
+for filename in os.listdir(posts_dir):
+if filename.endswith(&#34;.md&#34;):
+filepath = os.path.join(posts_dir, filename)
+with open(filepath, &#34;r&#34;) as file:
+content = file.read()
+
+# Step 2: Find all image links in the format ![Image Description](/images/Pasted%20image%20...%20.png)
+images = re.findall(r&#39;\[\[([^]]*\.png)\]\]&#39;, content)
+
+# Step 3: Replace image links and ensure URLs are correctly formatted
+for image in images:
+
+# Prepare the Markdown-compatible link with %20 replacing spaces
+markdown_image = f&#34;![Image Description](/images/{image.replace(&#39; &#39;, &#39;%20&#39;)})&#34;
+content = content.replace(f&#34;[[{image}]]&#34;, markdown_image)
+
+# Step 4: Copy the image to the Hugo static/images directory if it exists
+image_source = os.path.join(attachments_dir, image)
+if os.path.exists(image_source):
+shutil.copy(image_source, static_images_dir)
+
+# Step 5: Write the updated content back to the markdown file
+with open(filepath, &#34;w&#34;) as file:
+file.write(content)
+ 
+print(&#34;Markdown files processed and images copied successfully.&#34;)
+</code></pre><h3 id="upload-to-github">Upload to GitHub<a href="#upload-to-github" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>In GitHub ein neues Repository erstellen
+![[Pasted image 20250526180623.png]]</p>
+<pre tabindex="0"><code>## Generiert einen SSH Key (Mac/Linux/Windows)
+cd ~/.ssh
+ssh-keygen -t rsa -b 4096 -C &#34;your@mail.com&#34;
+</code></pre><p>Lest die .pub Datei aus die erzeugt wurde und speichert den enthaltenen SSH-Key in eurem GitHub-Account.</p>
+<p>Um die Verbindung zu testen:</p>
+<pre tabindex="0"><code>ssh -T git@github.com
+</code></pre><p>Ihr solltet eine Nachricht mit eurem Benutzernamen erhalten.</p>
+<p>git remote add origin <a href="mailto:git@github.com">git@github.com</a>:USERNAME/REPONAME
+git add .
+git commit -m &ldquo;Your message&rdquo;
+git push -u origin master</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+    
+    
+      <a href="https://armintei.github.io/armintei-blog/posts/blog/sexy-terminal-mit-oh-my-posh/" class="button inline next">
+         [<span class="button__text"></span>] &gt;
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/armintei-blog/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
