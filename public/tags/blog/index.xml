@@ -2,17 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Terminal</title>
-    <link>https://armintei.github.io/armintei-blog/tags/blog/</link>
+    <link>http://localhost:1313/armintei-blog/tags/blog/</link>
     <description>Recent content in Blog on Terminal</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://armintei.github.io/armintei-blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/armintei-blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bloggen als IT-Nerds</title>
-      <link>https://armintei.github.io/armintei-blog/posts/blog/how-to-blog/</link>
+      <title>TryHackMe Write Up - Splunk Basics</title>
+      <link>http://localhost:1313/armintei-blog/posts/splunk-basics---blog/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/armintei-blog/posts/splunk-basics---blog/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://tryhackme.com/room/splunk101&#34;&gt;https://tryhackme.com/room/splunk101&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;For this write up i will skip directly to task 5 since for the tasks before you just need to read the provided text.&lt;/p&gt;&#xA;&lt;p&gt;Download the attached log file &amp;ldquo;VPN_logs&amp;rdquo; and upload this file into the Splunk instance with the right source type.&#xA;In case you are using the AttackBox, the file is available in the &lt;code&gt;/root/Rooms/SplunkBasic/&lt;/code&gt; directory.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Upload the data attached to this task and create an index &amp;ldquo;VPN_Logs&amp;rdquo;. How many events are present in the log file?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;It shows in the top left corner of the dashboard&#xA;!&lt;img src=&#34;http://localhost:1313/armintei-blog/images/Splunk1.png&#34; alt=&#34;Image Description&#34;&gt;&#xA;Answer: 2862&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sexy Terminal mit oh-my-posh</title>
+      <link>http://localhost:1313/armintei-blog/posts/sexy-terminal-mit-oh-my-posh/</link>
+      <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/armintei-blog/posts/sexy-terminal-mit-oh-my-posh/</guid>
+      <description>&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;curl -s https://ohmyposh.dev/install.sh | bash -s&#xA;nano ~/.bashrc &#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;An erster Stelle im Skript hinzufügen, um oh-my-posh beim starten des Terminals automatisch zu initialisieren:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# oh-my-posh&#xA;export PATH=$PATH:/home/min/.local/bin&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Außerdem deklarieren wir eine Variable &lt;code&gt;POSH_THEME=&amp;quot;theme.name&amp;quot;&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Alle themes sind in master repository enthalten. Wir klonen es in einen neuen Ordner &lt;code&gt;posh-themes&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone https://github.com/JanDeDobbeleer/oh-my-posh.git posh-themes&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Um das festlegen des Themes etwas einfacher zu gestalten, fügen wir noch etwas in der Datei &lt;code&gt;.bashrc&lt;/code&gt; hinzu.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;POSH_THEME=&amp;#34;theme.name&amp;#34;&#xA;&#xA;eval &amp;#34;$(oh-my-posh init bash --config /home/min/posh-themes/themes/$POSH_THEME.omp.json)&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Wir deklarieren eine Variable &lt;code&gt;POSH_THEME=&amp;quot;theme-name&amp;quot;&lt;/code&gt; und brauchen bloß den Namen des gewünschten Themes einfügen.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bloggen wie ein IT-Profi</title>
+      <link>http://localhost:1313/armintei-blog/posts/how-to-blog/</link>
       <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://armintei.github.io/armintei-blog/posts/blog/how-to-blog/</guid>
+      <guid>http://localhost:1313/armintei-blog/posts/how-to-blog/</guid>
       <description>&lt;p&gt;Ein Blog ist ein geniales Medium um seine Ideen festzuhalten und mit anderen zu teilen. Daher habe ich beschlossen, einen eigenen Blog ins Leben zu rufen.&lt;/p&gt;&#xA;&lt;p&gt;Natürlich könnte ich mir jetzt eine generische WordPress-Seite basteln&amp;hellip;aber das wäre langweilig. Um etwas Würze in das ganze zu bringen, wird dieser Blog technisch unnötig anspruchsvoll aufgebaut.&lt;/p&gt;&#xA;&lt;p&gt;Dazu benötigen wir folgende Tools:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Obsidian&lt;/li&gt;&#xA;&lt;li&gt;Hugo&lt;/li&gt;&#xA;&lt;li&gt;GitHub&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Disclaimer! Ich arbeite auf einem Linux System. Daher richtet sich diese Anleitung eher an Linux User. Ich werde die Schritte für Windows ergänzen.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>

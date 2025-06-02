@@ -12,7 +12,7 @@ for filename in os.listdir(posts_dir):
     if filename.endswith(".md"):
         filepath = os.path.join(posts_dir, filename)
         
-        with open(filepath, "r", encoding="utf-8") as file:
+        with open(filepath, "r") as file:
             content = file.read()
         
         # Step 2: Find all image links in the format ![Image Description](/images/Pasted%20image%20...%20.png)

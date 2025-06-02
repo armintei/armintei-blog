@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tryhackme on Terminal</title>
+    <link>http://localhost:1313/armintei-blog/tags/tryhackme/</link>
+    <description>Recent content in Tryhackme on Terminal</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/armintei-blog/tags/tryhackme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Write Up - Splunk Basics</title>
+      <link>http://localhost:1313/armintei-blog/posts/splunk-basics---blog/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/armintei-blog/posts/splunk-basics---blog/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://tryhackme.com/room/splunk101&#34;&gt;https://tryhackme.com/room/splunk101&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;For this write up i will skip directly to task 5 since for the tasks before you just need to read the provided text.&lt;/p&gt;&#xA;&lt;p&gt;Download the attached log file &amp;ldquo;VPN_logs&amp;rdquo; and upload this file into the Splunk instance with the right source type.&#xA;In case you are using the AttackBox, the file is available in the &lt;code&gt;/root/Rooms/SplunkBasic/&lt;/code&gt; directory.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Upload the data attached to this task and create an index &amp;ldquo;VPN_Logs&amp;rdquo;. How many events are present in the log file?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;It shows in the top left corner of the dashboard&#xA;!&lt;img src=&#34;http://localhost:1313/armintei-blog/images/Splunk1.png&#34; alt=&#34;Image Description&#34;&gt;&#xA;Answer: 2862&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

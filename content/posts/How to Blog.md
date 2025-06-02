@@ -102,7 +102,7 @@ print("Markdown files processed and images copied successfully.")
 ### Upload to GitHub
 
 In GitHub ein neues Repository erstellen
-![[How_to_Blog.png]]
+!![Image Description](/images/How_to_Blog.png)
 
 ```
 ## Generiert einen SSH Key (Mac/Linux/Windows)
@@ -123,6 +123,8 @@ git remote add origin git@github.com:USERNAME/REPONAME
 git add .
 git commit -m "Your message"
 git push -u origin master
+
+
 
 ---
 

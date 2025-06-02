@@ -2,16 +2,21 @@
 <html lang="en">
 <head><script src="/armintei-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=armintei-blog/livereload" data-no-instant defer></script>
   
-    <title>Categories :: Terminal</title>
+    <title>Sexy Terminal mit oh-my-posh :: Terminal</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="" />
+<meta name="description" content="Installation curl -s https://ohmyposh.dev/install.sh | bash -s nano ~/.bashrc An erster Stelle im Skript hinzufügen, um oh-my-posh beim starten des Terminals automatisch zu initialisieren:
+# oh-my-posh export PATH=$PATH:/home/min/.local/bin Außerdem deklarieren wir eine Variable POSH_THEME=&quot;theme.name&quot;
+Alle themes sind in master repository enthalten. Wir klonen es in einen neuen Ordner posh-themes.
+git clone https://github.com/JanDeDobbeleer/oh-my-posh.git posh-themes Um das festlegen des Themes etwas einfacher zu gestalten, fügen wir noch etwas in der Datei .bashrc hinzu.
+POSH_THEME=&#34;theme.name&#34; eval &#34;$(oh-my-posh init bash --config /home/min/posh-themes/themes/$POSH_THEME.omp.json)&#34; Wir deklarieren eine Variable POSH_THEME=&quot;theme-name&quot; und brauchen bloß den Namen des gewünschten Themes einfügen.
+" />
 <meta name="keywords" content="" />
 
   <meta name="robots" content="noodp" />
 
-<link rel="canonical" href="http://localhost:1313/armintei-blog/categories/" />
+<link rel="canonical" href="http://localhost:1313/armintei-blog/posts/sexy-terminal-mit-oh-my-posh/" />
 
 
 
@@ -76,10 +81,15 @@
 
 
 <meta property="og:locale" content="en" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Categories">
-<meta property="og:description" content="" />
-<meta property="og:url" content="http://localhost:1313/armintei-blog/categories/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Sexy Terminal mit oh-my-posh">
+<meta property="og:description" content="Installation curl -s https://ohmyposh.dev/install.sh | bash -s nano ~/.bashrc An erster Stelle im Skript hinzufügen, um oh-my-posh beim starten des Terminals automatisch zu initialisieren:
+# oh-my-posh export PATH=$PATH:/home/min/.local/bin Außerdem deklarieren wir eine Variable POSH_THEME=&quot;theme.name&quot;
+Alle themes sind in master repository enthalten. Wir klonen es in einen neuen Ordner posh-themes.
+git clone https://github.com/JanDeDobbeleer/oh-my-posh.git posh-themes Um das festlegen des Themes etwas einfacher zu gestalten, fügen wir noch etwas in der Datei .bashrc hinzu.
+POSH_THEME=&#34;theme.name&#34; eval &#34;$(oh-my-posh init bash --config /home/min/posh-themes/themes/$POSH_THEME.omp.json)&#34; Wir deklarieren eine Variable POSH_THEME=&quot;theme-name&quot; und brauchen bloß den Namen des gewünschten Themes einfügen.
+" />
+<meta property="og:url" content="http://localhost:1313/armintei-blog/posts/sexy-terminal-mit-oh-my-posh/" />
 <meta property="og:site_name" content="Terminal" />
 
   <meta property="og:image" content="http://localhost:1313/armintei-blog/og-image.png">
@@ -88,10 +98,10 @@
 <meta property="og:image:height" content="627">
 
 
+  <meta property="article:published_time" content="2025-05-29 00:00:00 &#43;0000 UTC" />
 
 
 
-  <link href="/armintei-blog/categories/index.xml" rel="alternate" type="application/rss+xml" title="Terminal" />
 
 
 
@@ -163,14 +173,76 @@
 
   <div class="content">
     
-  <div class="terms">
-    <h1>Categories</h1>
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/armintei-blog/posts/sexy-terminal-mit-oh-my-posh/">Sexy Terminal mit oh-my-posh</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-05-29</time></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="http://localhost:1313/armintei-blog/tags/blog/">blog</a>&nbsp;
+      
+      #<a href="http://localhost:1313/armintei-blog/tags/guide/">guide</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h3 id="installation">Installation<a href="#installation" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<pre tabindex="0"><code>curl -s https://ohmyposh.dev/install.sh | bash -s
+nano ~/.bashrc 
+</code></pre><p>An erster Stelle im Skript hinzufügen, um oh-my-posh beim starten des Terminals automatisch zu initialisieren:</p>
+<pre tabindex="0"><code># oh-my-posh
+export PATH=$PATH:/home/min/.local/bin
+</code></pre><p>Außerdem deklarieren wir eine Variable <code>POSH_THEME=&quot;theme.name&quot;</code></p>
+<p>Alle themes sind in master repository enthalten. Wir klonen es in einen neuen Ordner <code>posh-themes</code>.</p>
+<pre tabindex="0"><code>git clone https://github.com/JanDeDobbeleer/oh-my-posh.git posh-themes
+</code></pre><p>Um das festlegen des Themes etwas einfacher zu gestalten, fügen wir noch etwas in der Datei <code>.bashrc</code> hinzu.</p>
+<pre tabindex="0"><code>POSH_THEME=&#34;theme.name&#34;
+
+eval &#34;$(oh-my-posh init bash --config /home/min/posh-themes/themes/$POSH_THEME.omp.json)&#34;
+</code></pre><p>Wir deklarieren eine Variable <code>POSH_THEME=&quot;theme-name&quot;</code> und brauchen bloß den Namen des gewünschten Themes einfügen.</p>
+
+      </div></div>
+
+  
     
-    <ul>
-      
-      
-    </ul>
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
   </div>
+  <div class="pagination__buttons">
+    
+      <a href="http://localhost:1313/armintei-blog/posts/splunk-basics---blog/" class="button inline prev">
+        &lt; [<span class="button__text">TryHackMe Write Up - Splunk Basics</span>]
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="http://localhost:1313/armintei-blog/posts/how-to-blog/" class="button inline next">
+         [<span class="button__text">Bloggen wie ein IT-Profi</span>] &gt;
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
 
   </div>
 
